@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ef else</title>
+</head>
+<body>
+       <input type="text" id="first" placeholder="inter you name">
+       <br><br>
+       <input type="text" id="seond" placeholder="inter you name">
+       <br><br>
+
+        <button onclick="openclick()">button</button>
+
+         <h2 id="demo"></h2>
+       <script>
+           function openclick(){
+               var fname = document.getElementById('first').value 
+               var lname = document.getElementById('seond').value
+               var result = document.getElementById('demo') 
+
+               if(fname == lname){
+                   result.innerHTML="Right here"
+               }
+               else{
+                   result.innerHTML= 'Rong here'
+               }
+
+               console.log(fname,lname);
+           }
+       </script>
+</body>
+</html>
